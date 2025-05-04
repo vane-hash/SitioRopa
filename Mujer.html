@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilomujer..css">
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+    
+        <div class="linea">
+        <a href="inicio.html">Inicio</a>
+                  
+                <p>Mejores prendas para damas 100% calidad</p>  
+
+                <div class="busqueda-container">
+                    <input type="text" id="buscar" placeholder="Buscar..." class="busqueda">
+                    <button id="botonBuscar">Buscar</button>
+                </div>
+
+
+         <!--       <div class="logo">
+                    <img src="img/logoB.png" alt="Logo">
+                </div>
+            -->
+                <button id="verCarrito">🛒 Ver Carrito</button>
+                <div id="carrito" class="carrito-container">
+                    <h3>Carrito de Compras</h3>
+                    <ul id="listaCarrito"></ul>
+                    <p id="totalCarrito">Total: $0.00</p>
+                    <button id="vaciarCarrito">Vaciar Carrito</button>
+                </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="mensaje">
+        <h1>Ropa para mujer</h1>
+    </div>
+    <div class="imagenes_encabezado">
+        <img src="img/encabezado1.jpg" alt="Moda exclusiva">
+        <img src="img/encabezado2.jpg" alt="Tendencias actuales">
+        <img src="img/encabezado3.jpg" alt="Estilos únicos">
+        
+        <div class="texto_animado">
+            <h1>¡Descubre la moda que te define!</h1>
+        </div>
+    </div>
+
+
+    <!--------------------------MENSAJE SI NO SE ENCONTRO LO QUE BUSCABA-->
+    <p id="mensajeBusqueda" style="display: none; color: red;"></p>
+
+<!---------------------------------Ropa fila 1------------------------------>
+
+    <div class="cards_ropa">
+
+        <div class="producto" data-categoria="vestidos mujer vestidos largos">
+            <img src="img/vestido1.jpg">
+            <div class="info">
+                <h3>Vestido casual</h3>
+                <p>Vestido violeta largo sin mangas, fresco y casual</p>
+                <span class="precio">$399.99</span>
+                <button class="add-to-cart" data-product="Vestido casual" data-price="399.99">Añadir al carrito</button>
+            </div>
+        </div>
+    
+        <div class="producto" data-categoria="vestidos mujer vestidos largos">
+            <img src="img/vestido2.jpg" >
+            <div class="info">
+                <h3>Vestido de verano</h3>
+                <p>Ligero fresco, ideal para climas cálidos y ocasiones casuales</p>
+                <span class="precio">$699</span>
+                <button class="add-to-cart" data-product="Vestido de verano" data-price="699">Añadir al carrito</button>
+            </div>
+        </div>
+    
+        <div class="producto" data-categoria="Pantalones mujer pantalon mujer pantalones negros pantalon de cuero pantalones de cuero">
+            <img src="img\pantalon3.jpg" alt="Vestido elegante">
+            <div class="info">
+                <h3>Pantalon de cuero</h3>
+                <p>Cómodo y versátil, perfecto para el día a día.</p>
+                <span class="precio">$599.99</span>
+                <button class="add-to-cart" data-product="pantalon de cuero" data-price="599.99">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="Blusas mujer blusa blanca blusa casual blusas blancas">
+            <img src="img\blusa1.jpg" alt="Vestido elegante">
+            <div class="info">
+                <h3>Blusa casual</h3>
+                <p>Cómodo y versátil, perfecto para el día a día.</p>
+                <span class="precio">$280</span>
+                <button class="add-to-cart" data-product="Blusa casual" data-price="280">Añadir al carrito</button>
+            </div>
+        </div>
+
+<!-----------------------------------Segunda fila------------------------------------->
+
+    <div class="producto" data-categoria="camisa casual camisa hombre camisas">
+        <img src="img\camisa1.jpg" >
+        <div class="info">
+            <h3>Camisa casual</h3>
+            <p>Fresco ideal para tiempo de verano</p>
+            <span class="precio">$299</span>
+            <button class="add-to-cart" data-product="Camisa casual" data-price="299">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="sueter cafe sueter hombre sudadera hombre chamarra hombre">
+        <img src="img\sueter1.jpg" alt="Vestido elegante">
+        <div class="info">
+            <h3>Sueter cafe</h3>
+            <p>sueter ligero casual ideal para cualquier dia</p>
+            <span class="precio">$699.99</span>
+            <button class="add-to-cart" data-product="Sueter cafe" data-price="699.99">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="vestidos elegantes vestido elegante ">
+        <img src="img/vestido4.jpg" alt="Vestido elegante">
+        <div class="info">
+            <h3>Vestido elegante</h3>
+            <p>Cómodo y versátil, ideal para cualquier ocasion</p>
+            <span class="precio">$700</span>
+            <button class="add-to-cart" data-product="Vestido celegante" data-price="700">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="vestidos">
+        <img src="img/vestido5.jpg" alt="Vestido elegante">
+        <div class="info">
+            <h3>Vestido casual</h3>
+            <p>vestido color pastel, comodo perfecto para el día a día</p>
+            <span class="precio">$299.99</span>
+            <button class="add-to-cart" data-product="Vestido casual" data-price="299.99">Añadir al carrito</button>
+        </div>
+    </div>
+
+       
+<!-----------------------------------Segunda fila------------------------------------->
+
+    <div class="producto" data-categoria="Blusas mujer blusa blanca blusa casual blusas blancas">
+        <img src="img\blusa2.jpg" alt="Vestido elegante">
+        <div class="info">
+            <h3>Blusa elegante</h3>
+            <p>Blusa descubierta elegante, ideal para ocasiones especiales</p>
+            <span class="precio">$489</span>
+            <button class="add-to-cart" data-product="Blusa elegante" data-price="489">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Pantalones hombre pantalon de mezclilla pantalon casual">
+        <img src="img\pantalonhombre1.jpg" >
+        <div class="info">
+            <h3>Pantalon mezclilla</h3>
+            <p>Pantalon casual ideal para cualquier dia</p>
+            <span class="precio">$699.99</span>
+            <button class="add-to-cart" data-product="Pantalon mezclilla" data-price="699.99">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Blusas mujer blusa roja blusa casual blusas elegantes">
+        <img src="img\blusa6.jpg" alt="Vestido elegante">
+        <div class="info">
+            <h3>Blusa roja</h3>
+            <p>Blusa elegante roja ideal para cualquier ocasion</p>
+            <span class="precio">$399.99</span>
+            <button class="add-to-cart" data-product="Blusa roja" data-price="399.99">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Pantalones hombre pantalon de mezclilla pantalon casual">
+        <img src="img\pantalonhombre2.jpg" >
+        <div class="info">
+            <h3>Pantalon mezclilla</h3>
+            <p>Pantalon casual ideal para cualquier dia</p>
+            <span class="precio">$899.99</span>
+            <button class="add-to-cart" data-product="Pantalon mezclilla" data-price="899.99">Añadir al carrito</button>
+        </div>
+    </div>
+
+
+</div>
+<div class="gif">
+<img src="img\Exclusivo.gif" alt="">
+</div>
+<!----------------------------Accesorios------------------------------------------------>
+<div class="cards_ropa">
+
+    <div class="producto" data-categoria="Bolsas blancas bolsa blanca bolsa elegante">
+        <img src="img\bolsa1.jpg">
+        <div class="info">
+            <h3>Bolsa elegante</h3>
+            <p>Bolsa elegante de cuero, blanca, ideal para cualquier ocasion</p>
+            <span class="precio">$999.99</span>
+            <button class="add-to-cart" data-product="Bolsa elegante" data-price="999.99">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Accesorios hombres bufanda negra bufanda">
+        <img src="img\bufanda1.jpg">
+        <div class="info">
+            <h3>Bufanda negra</h3>
+            <p>Bufanda negra de tela comoda, ideal para el invierno </p>
+            <span class="precio">$400</span>
+            <button class="add-to-cart" data-product="Bufanda negra" data-price="400">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Bolsas blancas bolsa blanca bolsa elegante">
+        <img src="img\bolsa5.jpg">
+        <div class="info">
+            <h3>Bolsa negra</h3>
+            <p>Bolsa elegante de cuero, negra, ideal para cualquier ocasion</p>
+            <span class="precio">$700</span>
+            <button class="add-to-cart" data-product="Bolsa negra" data-price="700">Añadir al carrito</button>
+        </div>
+    </div>
+  
+    <div class="producto" data-categoria="Collar dorado collares collar elegante Accesorios elegantes">
+        <img src="img\collar.jpg">
+        <div class="info">
+            <h3>Collar dorado </h3>
+            <p>Collar sencillo casual</p>
+            <span class="precio">$200</span>
+            <button class="add-to-cart" data-product="Collar dorado" data-price="200">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Pulsera de plata Pulseras elegantes Accesorios elegantes">
+        <img src="img\pulsera1.jpg">
+        <div class="info">
+            <h3>Pulsera Elegante</h3>
+            <p>Pulsera de plata Elegante</p>
+            <span class="precio">$800</span>
+            <button class="add-to-cart" data-product="Pulsera de plata" data-price="800">Añadir al carrito</button>
+        </div>
+    </div>
+  
+    <div class="producto" data-categoria="Collar elegante Accesorios elegantes Collar de diamantes">
+        <img src="img\collar2.jpg">
+        <div class="info">
+            <h3>Collar de diamantes </h3>
+            <p>Collar de diamantes elegante, ideal para ocasiones especiales</p>
+            <span class="precio">$2700</span>
+            <button class="add-to-cart" data-product="Collar de diamantes" data-price="2700">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <div class="producto" data-categoria="Reloj elegante Accesorios elegantes">
+        <img src="img\reloj.jpg">
+        <div class="info">
+            <h3>Reloj Elegante</h3>
+            <p>Reloj elegante casual, ideal para el dia a dia</p>
+            <span class="precio">$1200</span>
+            <button class="add-to-cart" data-product="Reloj elegante" data-price="1200">Añadir al carrito</button>
+        </div>
+    </div>
+  
+    <div class="producto" data-categoria="Collar dorado collares collar elegante Accesorios elegantes">
+        <img src="img\collar3.jpg">
+        <div class="info">
+            <h3>Collar dorado </h3>
+            <p>Collar dorado elegante y casual</p>
+            <span class="precio">$400</span>
+            <button class="add-to-cart" data-product="Collar dorado" data-price="400">Añadir al carrito</button>
+        </div>
+    </div>
+
+
+    
+<!-----------------------------SECCION DE ZAPATOS  SLIDER ------------------------------------->
+
+<header class="encabezado">
+    <h1>Descubre tu estilo</h1>
+    <p>Las mejores prendas para cada ocasión, con calidad y diseño único.</p>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="img/encabezado4.jpg" alt="Moda exclusiva">
+        </div>
+
+        <div class="slide">
+            <img src="img/encabezado5.jpg" alt="Tendencias actuales">
+        </div>
+
+        <div class="slide">
+            <img src="img/encabezado6.jpg" alt="Estilos únicos">
+        </div>
+    </div>
+</header>
+<!-----------------------------SECCION DE ZAPATOS------------------------------------->
+
+<div class="producto" data-categoria="Calzado tenis blancos tenis para hombre">
+    <img src="img\tenis1.jpg">
+    <div class="info">
+        <h3>Tenis</h3>
+        <p>Tenis basicos para caulquier prenda</p>
+        <span class="precio">$1999.99</span>
+        <button class="add-to-cart" data-product="Tenis" data-price="1999.99">Añadir al carrito</button>
+    </div>
+</div>
+
+<div class="producto" data-categoria="Tacones negros Tacones Calzado Tacones elegantes">
+    <img src="img\tacones1.jpg" alt="Vestido elegante">
+    <div class="info">
+        <h3>Tacones negros</h3>
+        <p>Tacones negros elegantes para cualquier ocasion</p>
+        <span class="precio">$2699</span>
+        <button class="add-to-cart" data-product="Tacones negros" data-price="2699">Añadir al carrito</button>
+    </div>
+</div>
+
+
+<div class="producto" data-categoria="Calzado tenis blancos tenis para hombre">
+    <img src="img\tenis1.jpg">
+    <div class="info">
+        <h3>Tenis</h3>
+        <p>Tenis basicos para caulquier prenda</p>
+        <span class="precio">$1200</span>
+        <button class="add-to-cart" data-product="Tenis" data-price="1200">Añadir al carrito</button>
+    </div>
+</div>
+
+
+<div class="producto" data-categoria="Calzado tenis blancos tenis para hombre">
+    <img src="img\tenis3.jpg">
+    <div class="info">
+        <h3>Tenis</h3>
+        <p>Tenis basicos para caulquier prenda</p>
+        <span class="precio">$2999</span>
+        <button class="add-to-cart" data-product="Tenis" data-price="2999">Añadir al carrito</button>
+    </div>
+</div>
+
+<div class="producto" data-categoria="Zapatos elegantes zapatos de hombre Calzado">
+    <img src="img\zapatos1.jpg" alt="Vestido elegante">
+    <div class="info">
+        <h3>Zapatos</h3>
+        <p>Zapatos elegantes negros, casuales</p>
+        <span class="precio">$899</span>
+        <button class="add-to-cart" data-product="Zapatos" data-price="899">Añadir al carrito</button>
+    </div>
+</div>
+
+<div class="producto" data-categoria="Tacones Rojos Tacones Calzado Tacones elegantes">
+    <img src="img\tacones3.jpg" alt="Vestido elegante">
+    <div class="info">
+        <h3>Tacones Rojos</h3>
+        <p>Tacones Rojos elegantes casuales para cualquier prenda</p>
+        <span class="precio">$1699</span>
+        <button class="add-to-cart" data-product="Tacones Rojos" data-price="1699">Añadir al carrito</button>
+    </div>
+</div>
+
+<div class="producto" data-categoria="Tacones negros Tacones Calzado Tacones elegantes">
+    <img src="img\tacones5.jpg" alt="Vestido elegante">
+    <div class="info">
+        <h3>Tacones negros</h3>
+        <p>Tacones negros elegantes para cualquier ocasion</p>
+        <span class="precio">$999</span>
+        <button class="add-to-cart" data-product="Tacones negros" data-price="999">Añadir al carrito</button>
+    </div>
+</div>
+   
+<div class="producto" data-categoria="Tacones Dorados Tacones Calzado Tacones elegantes">
+    <img src="img\tacones7.jpg" alt="Vestido elegante">
+    <div class="info">
+        <h3>Tacones Dorados</h3>
+        <p>Tacones Dorados elegantes para cualquier ocasion</p>
+        <span class="precio">$2799</span>
+        <button class="add-to-cart" data-product="Tacones Dorados" data-price="2799">Añadir al carrito</button>
+    </div>
+</div>
+<!-----------------------------------tercera  fila------------------------------------->
+</div>
+
+
+<!------------------------Seccion script para el funcionamiento del carrito-->
+
+<script>
+    let carrito = [];
+    let total = 0;
+
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+        button.addEventListener("click", function() {
+            let producto = this.getAttribute("data-product");
+            let precio = parseFloat(this.getAttribute("data-price"));
+
+            carrito.push({ nombre: producto, precio: precio });
+            total += precio;
+            actualizarCarrito();
+            alert(`${producto} ha sido añadido al carrito.`);
+        });
+    });
+
+    function actualizarCarrito() {
+        let listaCarrito = document.getElementById("listaCarrito");
+        let totalCarrito = document.getElementById("totalCarrito");
+        listaCarrito.innerHTML = "";
+        
+        carrito.forEach(item => {
+            let li = document.createElement("li");
+            li.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
+            listaCarrito.appendChild(li);
+        });
+
+        totalCarrito.textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    document.getElementById("verCarrito").addEventListener("click", function() {
+        let carritoDiv = document.getElementById("carrito");
+        carritoDiv.style.display = carritoDiv.style.display === "none" ? "block" : "none";
+    });
+
+    document.getElementById("vaciarCarrito").addEventListener("click", function() {
+        carrito = [];
+        total = 0;
+        actualizarCarrito();
+    });
+</script>
+<script>
+    document.addEventListener("click", function(event) {
+        let carritoDiv = document.getElementById("carrito");
+        let botonCarrito = document.getElementById("verCarrito");
+    
+        if (!carritoDiv.contains(event.target) && event.target !== botonCarrito) {
+            carritoDiv.style.display = "none";
+        }
+    });
+    </script>
+
+
+
+
+<script>
+document.getElementById("botonBuscar").addEventListener("click", function() {
+    let consulta = document.getElementById("buscar").value.toLowerCase().trim();
+    let productos = document.querySelectorAll(".producto");
+    let titulo = document.getElementById("titulo");
+    let imagenesEncabezado = document.querySelector(".imagenes_encabezado");
+    let encontrado = false;
+
+    productos.forEach(producto => {
+        let categoria = producto.getAttribute("data-categoria").toLowerCase();
+
+        if (categoria.includes(consulta)) {
+            producto.style.display = "block"; // Muestra los productos encontrados
+            encontrado = true;
+        } else {
+            producto.style.display = "none"; // Oculta productos no relacionados
+        }
+    });
+
+    let mensajeBusqueda = document.getElementById("mensajeBusqueda");
+    if (!encontrado) {
+        mensajeBusqueda.textContent = `No se encontraron resultados para: "${consulta}"`;
+        mensajeBusqueda.style.display = "block";
+        
+        // Oculta el título y las imágenes si no hay resultados
+        titulo.style.display = "none";
+        imagenesEncabezado.style.display = "none";
+    } else {
+        mensajeBusqueda.style.display = "none";
+        titulo.style.display = "block"; // Vuelve a mostrar el título si hay resultados
+        imagenesEncabezado.style.display = "block"; // Muestra imágenes de nuevo si hay resultados
+    }
+});
+</script>
+
+
+
+
+<script>
+    let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+    slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? "1" : "0";
+    });
+
+    index = (index + 1) % slides.length;
+}
+
+setInterval(showSlide, 4000); // Cambio automático cada 4 segundos
+showSlide(); // Mostrar el primer slide al cargar
+</script>
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>
+</body>
+</html>

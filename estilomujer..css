@@ -1,0 +1,400 @@
+body{
+    margin: 0;
+    padding: 0; 
+ font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+.gif img{
+    margin-left: 130px;
+    height: 600px;
+  
+}
+/************************************Inicio**************************************/
+.linea a{
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-left: 20px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+.linea a:hover{
+    background-color: #dcdbdb;
+    color: #000000;
+}
+.linea p{
+    color: #ffffff;
+   margin-left: 170px;
+}
+/***************************************** Logo ************************************************************/
+.logo img {
+    height: 50px;
+   padding: 20px;
+   margin-top: 5px;
+   margin-left: 30px;
+}
+.mensaje{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.linea{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1020;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transform: translateY(-5%);
+    animation: expandirDesdeArriba 1s ease-in-out forwards;
+}
+
+@keyframes expandirDesdeArriba {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ********************************************Buscador***************************************** */
+.busqueda-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.busqueda-container input{
+    transition: width 0.5s ease-in-out;
+}
+.busqueda-container input:focus {
+    margin-left: -50px;
+    width: 300px; /* Expande al hacer clic */
+}
+
+
+.busqueda {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #222;
+    transition: border-color 0.3s ease;
+}
+
+.busqueda:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* Animación para el logo */
+.logo {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: aparecerLogo 1s ease-in-out forwards;
+}
+
+@keyframes aparecerLogo {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación para el buscador */
+.busqueda-container {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: aparecerBuscador 1s ease-in-out forwards 0.5s;
+}
+
+@keyframes aparecerBuscador {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animación para el mensaje "Ropa para mujer" */
+.mensaje {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerMensaje 1s ease-in-out forwards 1s;
+}
+
+@keyframes aparecerMensaje {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/**************************Imagenes encabezado************************/
+.imagenes_encabezado {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: -25px;
+    overflow: hidden;
+}
+
+.imagenes_encabezado img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeIn 9s infinite;
+}
+
+.imagenes_encabezado img:nth-child(1) { animation-delay: 0s; }
+.imagenes_encabezado img:nth-child(2) { animation-delay: 3s; }
+.imagenes_encabezado img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/********** Animación del texto***************** */
+.texto_animado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    animation: aparecerTexto 1.5s ease-in-out 1s forwards;
+}
+
+@keyframes aparecerTexto {
+    from { opacity: 0; transform: translate(-50%, -70%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+
+/******************************Disenos de cards*******************************************/
+
+.cards_ropa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 200px;
+}
+.info{
+    height: 140px;
+}
+.info h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.info p {
+    font-size: 11px;
+    padding:0 28px;
+    width: 160px;
+    color: #555;
+}
+
+.precio {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff4081;
+    display: block;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+button:hover {
+    background-color: #e0356e;
+}
+/*******boton buscar*********/
+#botonBuscar{
+    width: 80px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+/******************carrito********************/
+.carrito-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.carrito-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carrito-container li {
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+#verCarrito {
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    font-size: 13px;
+    width: 110px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#vaciarCarrito {
+    background-color: #e0356e;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*************Animacion para texto************/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#texto {
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    margin-top: 50px;
+   margin-left: 400px;
+   border-radius: 5px;
+   background-color: #ff4081;
+   color: #fff;
+   padding: 8px 60px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   width: 440px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+
+.encabezado {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.encabezado h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Estilos del slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+}
+
+.active img {
+    transform: scale(1.05); /* Zoom en la imagen activa */
+}
+
